@@ -1,148 +1,110 @@
-# Awesome-Security-Privacy-Trust-Center
+# Awesome Security, Privacy & Trust Center Platforms
 
-# Awesome Security, Privacy & Trust Center
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-> A curated list of top Security, Privacy and Trust Center platforms — both SaaS/Hosted commercial solutions and open-source alternatives for publishing compliance posture, answering security questionnaires, and managing trust with customers.
-> 🌟 Star this repo if you find it useful! 🌟
+> A curated directory of top **Security, Privacy, and Customer Trust Center platforms**, compliance posture portals, AI-powered security questionnaire response tools, and Governance, Risk, and Compliance (GRC) solutions. Explore both leading enterprise commercial SaaS solutions and self-hosted open-source alternatives.
 
 ---
 
 ## 📋 Table of Contents
 
-- [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [SafeBase](#safebase)
-  - [Conveyor](#conveyor)
-  - [Whistic](#whistic)
-  - [Vanta Trust Center](#vanta-trust-center)
-  - [Drata Trust Center](#drata-trust-center)
-  - [OneTrust Trust Center](#onetrust-trust-center)
-  - [TrustArc](#trustarc)
-- [Open-Source Software](#-open-source-software)
-  - [Kodus Trust Center](#kodus-trust-center)
-  - [Probo](#probo)
-  - [QResponder](#qresponder)
-  - [Questionnaire-Responder](#questionnaire-responder)
-  - [OpenWatch](#openwatch)
-  - [CompliEdge](#compliedge)
-  - [evidentia](#evidentia)
-- [Comparison at a Glance](#-comparison-at-a-glance)
+- [Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [SaaS & Hosted Trust Platforms](#-saas--hosted-trust-platforms)
+- [Open-Source Trust & Compliance Software](#-open-source-trust--compliance-software)
+- [Feature Comparison Matrix](#-feature-comparison-matrix)
 - [Contributing](#-contributing)
+- [License](#-license)
 
 ---
 
-## 🟦 SaaS / Hosted Platforms
+## 🌐 Sector Overview & Market Dynamics
 
-Commercial, cloud-hosted Security, Privacy and Trust Center platforms. These are not open-source but are included as reference points for feature comparison.
+The Security, Privacy, and Trust Center market—operating within the continuous compliance automation and digital trust domain—is currently valued at approximately **$3 billion** and projected to exceed **$13.4 billion** by the 2030s, growing at a rapid CAGR of **16.4% to 31.2%**.
 
-### SafeBase
-**Type:** Trust center platform with AI questionnaire automation
-SafeBase is a leading commercial trust center platform, providing a public-facing security posture page alongside AI-assisted questionnaire response and document access controls. It is the primary commercial reference for open-source alternatives like Kodus Trust Center [citation:6].
-
-### Conveyor
-**Type:** Trust center and security review automation
-Conveyor provides a trust center for publishing compliance posture, alongside a security questionnaire automation workflow that helps sales and security teams respond faster to customer inquiries.
-
-### Whistic
-**Type:** Vendor security assessment and trust management
-Whistic focuses on vendor security assessments and trust management, helping organizations respond to security questionnaires and manage third-party risk from a centralized platform.
-
-### Vanta Trust Center
-**Type:** Trust center within compliance automation suite
-Vanta's Trust Center extends its compliance automation platform with a public-facing trust page, allowing organizations to showcase SOC 2, ISO 27001, and other certifications alongside security posture information.
-
-### Drata Trust Center
-**Type:** Trust center within Drata compliance platform
-Drata provides a Trust Center as part of its compliance automation offering, enabling organizations to publish their security posture and certifications without building a separate portal.
-
-### OneTrust Trust Center
-**Type:** Privacy-focused trust center within OneTrust suite
-OneTrust provides a Trust Center as part of its broader privacy management platform, focused on consent, data mapping, and privacy certifications.
-
-### TrustArc
-**Type:** Privacy certification and trust center
-TrustArc provides privacy compliance certifications and a trust center for publishing certification status to customers and partners.
+Market dynamics exhibit a **moderately fragmented yet rapidly consolidating landscape**: while enterprise GRC incumbents and major cloud security suites (e.g., OneTrust, ServiceNow, Microsoft) anchor legacy enterprise spending, fast-growing compliance leaders (such as Vanta and Drata) and focused trust center point solutions (SafeBase, Conveyor) compete intensely for high-velocity mid-market sales acceleration. This dynamic has driven steady M&A consolidation—such as Drata's $250M acquisition of SafeBase—moving the ecosystem away from isolated point questionnaires toward unified continuous compliance postures and customer trust centers.
 
 ---
 
-## 🟩 Open-Source Software
+## 🟦 SaaS & Hosted Trust Platforms
 
-Self-hosted, community-driven Security, Privacy and Trust Center tools. The open-source ecosystem **splits** between **trust center builders** (Kodus Trust Center), **GRC platforms with public compliance pages** (Probo), and **questionnaire automation engines** (QResponder, Questionnaire-Responder).
+Below is an overview of commercial SaaS Trust Center, compliance automation, and security questionnaire platforms, ranked in descending order by company scale (valuation / annual revenue).
 
-### Kodus Trust Center
-**Stack:** Next.js / TypeScript / Supabase | **License:** Open Source
-Kodus Trust Center is a **free, self-hosted, YAML-driven trust center builder** that lets you paste your security program into a single YAML document and instantly expose a polished trust portal [citation:6]. Features include:
-- **Public trust center** with theming (light/dark), company logo, hero commitments, metrics, compliance cards, policies, documents, infrastructure, monitoring, updates, FAQs accordion, subprocessors, and contacts [citation:6]
-- **Document requests** via modal collecting work email and context, stored in Supabase [citation:6]
-- **Admin dashboard** with tabs for requests and YAML editor, GitHub SSO via NextAuth [citation:6]
-- **YAML schema** with layout control (sections can be `full`/`half` width or hidden entirely) [citation:6]
-
-Everything lives in your repo or Supabase project, deployable to Vercel, Fly, Render, or any Next.js host [citation:6]. The project explicitly positions itself as "no paid SaaS, no vendor lock-in" [citation:6].
-**Best for:** Small to mid-sized teams wanting a self-hosted trust center that can be edited via YAML by sales and security teams, without a commercial subscription.
-
-### Probo
-**Stack:** Go / PostgreSQL / GraphQL / Docker | **License:** ISC
-Probo is an open-source **Governance, Risk, and Compliance (GRC) platform** with a built-in **Compliance Page** for public trust center publishing [citation:15]. It covers the full GRC lifecycle including risk management, controls, vendor risk, data privacy, access reviews, audit programs, and document approval workflows [citation:15]. The Compliance Page supports public compliance portal publishing, NDA management, certification publishing, and custom domain support [citation:15]. Every entity is accessible via web console, `prb` CLI (44+ command groups), **270+ MCP tools** for AI agent integration, GraphQL API, and an n8n community node [citation:15]. Audit-ready features include policy-based RBAC, immutable audit logs, electronic document sign-off, and evidence chains [citation:15].
-**Best for:** Organizations wanting a self-hosted GRC platform that includes a public compliance page alongside full internal compliance management, with strong AI agent accessibility via MCP.
-
-### QResponder
-**Stack:** Python / FastAPI / Local-first | **License:** Open Source
-QResponder is a **local-first, self-hostable security questionnaire automation** tool that generates grounded, cited answers from your own knowledge base [citation:2]. Key privacy guarantees: connector credentials live in `.env` on the server and are never sent to the browser; connectors run only on explicit `connect`, never during answering; local answering stays zero-egress [citation:2]. Supports OAuth connections to Notion, Google Drive, and Confluence, plus paste-a-token paths [citation:2]. The answering path (Tier-1 → hybrid retrieval + rerank → grounded generation → faithfulness → abstain) never makes external fetches unless you configure a cloud model; with a local model, zero external calls are made [citation:2]. Includes per-run source include/exclude filters and an audit trail recording effective sources used [citation:2].
-**Best for:** Security teams wanting questionnaire automation with strict data boundary guarantees, where internal policies never leave the host unless explicitly configured.
-
-### Questionnaire-Responder
-**Stack:** Python / SQLite / Streamlit | **License:** Open Source
-Questionnaire-Responder turns a vendor security questionnaire spreadsheet into a first-pass draft, **citing your own security docs for every answer and never inventing a control you do not have** [citation:7]. It includes a **documentation gap report** that analyzes unanswered questions to reveal what your policy set does not document — a second product hiding in the NOT_FOUND rows: "find out what you need to write before a customer asks" [citation:7]. Multi-client workspaces keep consultant or vCISO client evidence structurally isolated at the storage layer (separate directories, separate SQLite stores), making cross-workspace contamination structurally impossible [citation:7]. Includes a Streamlit review UI for approving, editing, or rejecting drafted answers with verbatim cited evidence and confidence badges [citation:7].
-**Best for:** Consultants and vCISOs answering questionnaires for multiple clients, needing strict workspace isolation and gap analysis to improve documentation.
-
-### OpenWatch
-**Stack:** Go / PostgreSQL / React | **License:** Open Source
-OpenWatch is a **continuous compliance platform** for Linux fleets under CIS, STIG, NIST 800-53, NIST 800-171, CMMC Level 2, and PCI DSS [citation:8]. While not a trust center per se, it provides the **audit-ready evidence layer** that a trust center depends on: point-in-time queries answering "Were these 200 servers compliant with STIG on January 15th?" in seconds, backed by machine-verifiable evidence exportable as CSV, JSON, PDF, or OSCAL [citation:8]. Connects to servers over SSH, runs the 779-rule Kensa corpus, and keeps posture as a timeline showing what is passing now, what was passing last Tuesday, and what drifted [citation:8]. Deploys as a single Go binary with embedded React UI, requiring PostgreSQL and 4GB RAM [citation:8].
-**Best for:** Linux-centric organizations needing continuous compliance evidence for audits that can feed into trust center claims, without proprietary scanning agents.
-
-### CompliEdge
-**Stack:** Python / Django / PostgreSQL | **License:** Open Source
-CompliEdge is an enterprise-grade **GRC management system** built with Django, covering governance policies, risk management, compliance frameworks with automated checklists, dashboards, and AI-driven risk prediction [citation:5]. It includes multi-role user management (Admin, Manager, Employee, Auditor), workflow management for policy and risk approvals, two-factor authentication, and comprehensive audit logs [citation:5]. While not a public trust center, it provides the internal governance foundation that supports trust center claims.
-**Best for:** Organizations wanting a Django-based GRC platform for internal policy and risk management, with the option to build a trust center on top.
-
-### evidentia
-**Stack:** Python | **License:** Open Source
-evidentia is an open-source GRC tool covering gap analysis, risk statements, evidence collection, web UI, and compliance automation [citation:10]. Search results are limited; verify current maintenance and feature coverage before adoption.
-**Best for:** Teams exploring lightweight GRC tooling with evidence collection capabilities.
+| Platform | Company Valuation / Revenue Scale | Specific Starting Tier Pricing | Free Tier / Trial Limits | Key Strengths & Focus |
+|:---|:---|:---|:---|:---|
+| **[OneTrust](https://www.onetrust.com/)** | **$4.5B Valuation** (~$500M+ ARR) | Starting at **$10,000/year** (custom modular plans, min. annual floor) | **No free tier or trial**; standalone free web utility scans only | Enterprise privacy lifecycle, consent management, data mapping, GRC, and privacy trust center. |
+| **[Vanta](https://www.vanta.com/)** | **$4.2B Valuation** (~$300M ARR) | Starting at **$10,000/year** (Essentials tier for early startups) | **No free tier or trial**; demo and scheduled POC sandbox through sales | Automated SOC 2, ISO 27001 compliance, continuous monitoring, and integrated customer Trust Center. |
+| **[Drata](https://drata.com/)** | **$2.0B Valuation** (~$100M ARR) | Starting at **$7,500/year** (Foundations tier for small startups) | **No free tier or trial**; private sandbox / guided partner POC only | Automated audit evidence collection, continuous compliance, vendor risk, and trust posture publishing. |
+| **[TrustArc](https://trustarc.com/)** | **$60M–$85M ARR** (Main Capital Partners PE) | Starting at **$10,000/year** (entry-level module packaging) | **No free tier for core suite**; limited free trial only for standalone Nymity research database | Enterprise privacy management framework, DPIA/PIA automation, consent, and regulatory trust certificates. |
+| **[SafeBase](https://safebase.io/)** | **$250M Valuation** (Acquired by Drata; ~$10M+ ARR) | Starting at **$5,000/year** (paid tier with CRM integrations) | **Free Forever tier** (Foundation plan: 1 public trust portal, document hosting, clickwrap NDAs, access workflows) | Interactive public security posture portal, automated clickwrap NDAs, and AI-assisted questionnaire filling. |
+| **[Whistic](https://www.whistic.com/)** | **$11M–$17M ARR** ($51M total VC funding) | Starting at **$15,000/year** (AWS marketplace baseline vendor tier) | **Free Basic Profile** (Zero-cost vendor profile to publish standard security posture and self-assessments) | Dual-sided vendor risk management (TPRM), security profile catalog, and automated questionnaire exchange. |
+| **[Conveyor](https://www.conveyor.com/)** | **$40M Funding** (Series B, ~$5M+ ARR) | Starting at **$5,000/year** (Credit-based tier with AI questionnaire workflows) | **Free Trust Center** ($0 forever; NDA-protected document sharing for up to 120 customer accounts/year) | AI-powered security questionnaire completion and self-serve customer trust center portal. |
 
 ---
 
-## 📊 Comparison at a Glance
+## 🟩 Open-Source Trust & Compliance Software
 
-| Software | License | Stack | Public Trust Page | Questionnaire Automation | Self-Hosted | Best For |
-|----------|---------|-------|-------------------|--------------------------|-------------|----------|
-| **SafeBase** | Proprietary | Cloud | ✅ | ✅ AI | ❌ | Commercial trust center |
-| **Vanta Trust Center** | Proprietary | Cloud | ✅ | (Suite) | ❌ | Vanta compliance users |
-| **Kodus Trust Center** | Open Source | Next.js/Supabase | ✅ YAML-driven | ❌ | ✅ | Self-hosted trust portal |
-| **Probo** | ISC | Go/Postgres | ✅ Compliance Page | ❌ | ✅ | Full GRC + public page |
-| **QResponder** | Open Source | Python/FastAPI | ❌ | ✅ Local-first | ✅ | Zero-egress questionnaire |
-| **Questionnaire-Responder** | Open Source | Python/SQLite | ❌ | ✅ + Gap report | ✅ | Multi-client consultants |
-| **OpenWatch** | Open Source | Go/Postgres | ❌ (Evidence layer) | ❌ | ✅ | Continuous compliance evidence |
-| **CompliEdge** | Open Source | Python/Django | ❌ | ❌ | ✅ | Internal GRC foundation |
+Self-hosted, transparent, and community-driven solutions for public trust centers, continuous compliance evidence gathering, and zero-egress questionnaire responding. Ranked in descending order by GitHub community stars.
+
+| Repository | GitHub Stars | Tech Stack | Primary Focus & Capabilities |
+|:---|:---:|:---|:---|
+| **[intuitem/ciso-assistant-community](https://github.com/intuitem/ciso-assistant-community)** | [![Stars](https://img.shields.io/github/stars/intuitem/ciso-assistant-community?style=social&color=white)](https://github.com/intuitem/ciso-assistant-community/stargazers) | Python / Django / React | All-in-one GRC platform for Risk, Compliance, Audits, and TPRM with 200+ global framework mappings (ISO 27001, SOC 2, NIST, NIS2). |
+| **[strongdm/comply](https://github.com/strongdm/comply)** | [![Stars](https://img.shields.io/github/stars/strongdm/comply?style=social&color=white)](https://github.com/strongdm/comply/stargazers) | Go / Markdown | SOC 2-focused compliance automation CLI framework: manage policies as code, track employee onboarding, and produce audit-ready records. |
+| **[getprobo/probo](https://github.com/getprobo/probo)** | [![Stars](https://img.shields.io/github/stars/getprobo/probo?style=social&color=white)](https://github.com/getprobo/probo/stargazers) | Go / PostgreSQL / GraphQL | Developer-first GRC engine with built-in **Compliance Page** (public trust portal), NDA gating, 270+ MCP AI agent tools, and audit logs. |
+| **[bmarsh9/gapps](https://github.com/bmarsh9/gapps)** | [![Stars](https://img.shields.io/github/stars/bmarsh9/gapps?style=social&color=white)](https://github.com/bmarsh9/gapps/stargazers) | Go / Vue.js | Open-source security compliance tracker supporting SOC 2, CMMC, ASVS, ISO 27001, HIPAA, NIST CSF, and PCI DSS controls. |
+| **[ethyca/fides](https://github.com/ethyca/fides)** | [![Stars](https://img.shields.io/github/stars/ethyca/fides?style=social&color=white)](https://github.com/ethyca/fides/stargazers) | Python / FastAPI / React | Privacy-as-code and data governance platform featuring a user-facing **Privacy Center** for handling DSAR, consent, and cookie tracking. |
+| **[theopenlane/core](https://github.com/theopenlane/core)** | [![Stars](https://img.shields.io/github/stars/theopenlane/core?style=social&color=white)](https://github.com/theopenlane/core/stargazers) | Go / GraphQL / Ent | Modern open-source compliance engine and control framework automating evidence gathering across SOC 2, GDPR, and ISO 27001. |
+| **[LeeMangold/OpenGRC](https://github.com/LeeMangold/OpenGRC)** | [![Stars](https://img.shields.io/github/stars/LeeMangold/OpenGRC?style=social&color=white)](https://github.com/LeeMangold/OpenGRC/stargazers) | PHP / Laravel / Vue.js | Lightweight self-hosted GRC platform for managing organizational risks, vendor assessments, security policies, and internal audit workflows. |
+| **[transilienceai/shasta](https://github.com/transilienceai/shasta)** | [![Stars](https://img.shields.io/github/stars/transilienceai/shasta?style=social&color=white)](https://github.com/transilienceai/shasta/stargazers) | Python / Cloud Security | Open-source cloud security and continuous compliance monitoring platform supporting multi-cloud environments across 14+ compliance standards. |
+| **[Morningstar/GoASQ](https://github.com/Morningstar/GoASQ)** | [![Stars](https://img.shields.io/github/stars/Morningstar/GoASQ?style=social&color=white)](https://github.com/Morningstar/GoASQ/stargazers) | Go | General Open Architecture Security Questionnaire: standardized, code-based security evaluation tooling for architectures and vendors. |
+| **[kodustech/trust-center](https://github.com/kodustech/trust-center)** | [![Stars](https://img.shields.io/github/stars/kodustech/trust-center?style=social&color=white)](https://github.com/kodustech/trust-center/stargazers) | Next.js / TypeScript / Supabase | Free, self-hosted, YAML-driven public trust center builder. Define policies and certifications in YAML to generate a branded security portal. |
+| **[Polycentric-Labs/evidentia](https://github.com/Polycentric-Labs/evidentia)** | [![Stars](https://img.shields.io/github/stars/Polycentric-Labs/evidentia?style=social&color=white)](https://github.com/Polycentric-Labs/evidentia/stargazers) | Python / OSCAL | Compliance-as-code automation library with NIST OSCAL catalog support, cryptographic evidence verification (Sigstore), and gap analysis. |
+| **[scorpionus007/QResponder](https://github.com/scorpionus007/QResponder)** | [![Stars](https://img.shields.io/github/stars/scorpionus007/QResponder?style=social&color=white)](https://github.com/scorpionus007/QResponder/stargazers) | Python / FastAPI / Local LLM | Local-first, zero-egress security questionnaire responder that grounds and cites answers strictly from local security documentation. |
+| **[Hanalyx/OpenWatch](https://github.com/Hanalyx/OpenWatch)** | [![Stars](https://img.shields.io/github/stars/Hanalyx/OpenWatch?style=social&color=white)](https://github.com/Hanalyx/OpenWatch/stargazers) | Go / PostgreSQL / React | Continuous compliance platform and dashboard for Linux fleets, producing temporal audit evidence exports for CIS, STIG, and NIST 800-53. |
+| **[PatricR73/Questionnaire-Responder](https://github.com/PatricR73/Questionnaire-Responder)** | [![Stars](https://img.shields.io/github/stars/PatricR73/Questionnaire-Responder?style=social&color=white)](https://github.com/PatricR73/Questionnaire-Responder/stargazers) | Python / SQLite / Streamlit | Vendor questionnaire auto-drafting utility with verbatim policy citations, reviewer approvals, and automated security documentation gap analysis. |
+
+---
+
+## 📊 Feature Comparison Matrix
+
+| Platform / Tool | Type | License | Public Trust Portal | Questionnaire Automation | Continuous Monitoring | Self-Hosted Deployment |
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|
+| **OneTrust** | Commercial SaaS | Proprietary | ✅ | ✅ | ✅ | ❌ |
+| **Vanta** | Commercial SaaS | Proprietary | ✅ | ✅ | ✅ | ❌ |
+| **Drata** | Commercial SaaS | Proprietary | ✅ | ✅ | ✅ | ❌ |
+| **TrustArc** | Commercial SaaS | Proprietary | ✅ | ❌ | ✅ | ❌ |
+| **SafeBase** | Commercial SaaS | Proprietary | ✅ | ✅ | ✅ | ❌ |
+| **Whistic** | Commercial SaaS | Proprietary | ✅ | ✅ | ❌ | ❌ |
+| **Conveyor** | Commercial SaaS | Proprietary | ✅ | ✅ | ❌ | ❌ |
+| **intuitem/ciso-assistant-community** | Open Source | AGPL-3.0 | ❌ (Internal GRC) | ✅ (TPRM/Audits) | ✅ | ✅ |
+| **strongdm/comply** | Open Source | Apache-2.0 | ❌ (CLI/Docs) | ❌ | ✅ | ✅ |
+| **getprobo/probo** | Open Source | ISC | ✅ (Compliance Page) | ❌ (Agentic MCP) | ✅ | ✅ |
+| **bmarsh9/gapps** | Open Source | AGPL-3.0 | ❌ (Dashboard) | ❌ | ✅ | ✅ |
+| **ethyca/fides** | Open Source | Apache-2.0 | ✅ (Privacy Center) | ❌ | ✅ | ✅ |
+| **theopenlane/core** | Open Source | Apache-2.0 | ❌ (API/Engine) | ❌ | ✅ | ✅ |
+| **LeeMangold/OpenGRC** | Open Source | GPL-3.0 | ❌ (Portal) | ✅ | ✅ | ✅ |
+| **kodustech/trust-center** | Open Source | MIT | ✅ (YAML Portal) | ❌ | ❌ | ✅ |
+| **scorpionus007/QResponder** | Open Source | MIT | ❌ | ✅ (Zero-Egress) | ❌ | ✅ |
+| **Hanalyx/OpenWatch** | Open Source | AGPL-3.0 | ❌ (Audit Trail) | ❌ | ✅ | ✅ |
+| **PatricR73/Questionnaire-Responder** | Open Source | MIT | ❌ | ✅ (Gap Report) | ❌ | ✅ |
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you know of an open-source Security, Privacy or Trust Center tool that should be listed here, please open a pull request with:
+Contributions are warmly welcomed! If you know of an outstanding open-source security portal, privacy management toolkit, or questionnaire automation project that should be listed here:
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
-
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source. Note that the open-source ecosystem **splits** between **trust center builders** (Kodus Trust Center, the most direct SafeBase alternative with YAML-driven editing), **GRC platforms with public compliance pages** (Probo, with 270+ MCP tools and full GRC coverage), and **questionnaire automation engines** (QResponder for zero-egress local answering, Questionnaire-Responder for multi-client gap analysis). No single open-source project yet replicates the full breadth of SafeBase or Vanta's trust center with AI questionnaire automation and document access controls, but combinations of Kodus (public page) + Probo (GRC) or QResponder (questionnaire) cover meaningful subsets of the workflow.
+1. Review the repository criteria (must be open source and actively maintained).
+2. Follow the table formatting guidelines with valid GitHub links and social star badges.
+3. Submit a pull request with a concise description of why the tool stands out.
 
 ---
 
 ## 📄 License
 
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
+This repository and curated list are released under the [Creative Commons Zero v1.0 Universal](LICENSE) (Public Domain). All third-party trademarks and project names belong to their respective holders.
 
 ---
 
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+⭐ **Star this repository if you found it helpful for your security, privacy, or trust architecture!** ⭐
