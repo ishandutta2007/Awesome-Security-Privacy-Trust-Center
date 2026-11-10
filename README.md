@@ -56,9 +56,9 @@ Below is an overview of commercial SaaS Trust Center, compliance automation, and
 
 ## 🟩 Open-Source Trust & Compliance Software 💻
 
-Self-hosted, transparent, and community-driven solutions for public trust centers, continuous compliance evidence gathering, and zero-egress questionnaire responding. Ranked in descending order by GitHub community stars ⭐.
+Self-hosted, transparent, and community-driven solutions for public trust centers, continuous compliance evidence gathering, and zero-egress questionnaire responding. Ranked in descending order by GitHub community GitHub_Stars ⭐.
 
-| Repository | ⭐ GitHub Stars | 🛠️ Tech Stack | 🎯 Primary Focus & Capabilities |
+| Repository | ⭐ GitHub_Stars | 🛠️ Tech Stack | 🎯 Primary Focus & Capabilities |
 |:---|:---:|:---|:---|
 | **[intuitem/ciso-assistant-community](https://github.com/intuitem/ciso-assistant-community)** | [![Stars](https://img.shields.io/github/stars/intuitem/ciso-assistant-community?style=social&color=white)](https://github.com/intuitem/ciso-assistant-community/stargazers) | Python / Django / React | 🏢 All-in-one GRC platform for Risk, Compliance, Audits, and TPRM with 200+ global framework mappings (ISO 27001, SOC 2, NIST, NIS2). |
 | **[strongdm/comply](https://github.com/strongdm/comply)** | [![Stars](https://img.shields.io/github/stars/strongdm/comply?style=social&color=white)](https://github.com/strongdm/comply/stargazers) | Go / Markdown | 📝 SOC 2-focused compliance automation CLI framework: manage policies as code, track employee onboarding, and produce audit-ready records. |
@@ -107,7 +107,7 @@ Self-hosted, transparent, and community-driven solutions for public trust center
 Contributions are warmly welcomed! 🎉 If you know of an outstanding open-source security portal, privacy management toolkit, or questionnaire automation project that should be listed here:
 
 1. 🔍 Review the repository criteria (must be open source and actively maintained).
-2. 📋 Follow the table formatting guidelines with valid GitHub links and social star badges.
+2. 📋 Follow the table formatting guidelines with valid GitHub links and social Stars_Badges.
 3. 🚀 Submit a pull request with a concise description of why the tool stands out.
 
 ---
